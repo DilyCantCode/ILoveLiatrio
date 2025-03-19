@@ -12,4 +12,5 @@ jobs:
               run: docker build -t dilycodes/dilycodes:latest .
             - name: push image to docker hub
               run:
+                docker login -u dilycodes -p ${{secrets.DOCKER_HUB_TOKEN}}
                 docker push dilycodes/dilycodes:latest
