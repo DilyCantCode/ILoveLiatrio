@@ -13,4 +13,4 @@ app.get("/api", (req,res) => { // defining the route
 
 
 // pass a function when the app is listening on given port
-app.listen(3000, () => console.log('Curr listening on Port 3000')); //standard for 3000, i actually dont know why we use 3000 specifically
+app.listen(3000, "0.0.0.0", () => console.log('Curr listening on Port 3000')); //standard for 3000, i actually dont know why we use 3000 specifically
