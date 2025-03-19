@@ -6,6 +6,7 @@ app.get("/api", (req,res) => { // defining the route
     res.json({
         message: "My name is Anthony Dang",
         message: "Test 1",
+        message: "Test 2",
         timestamp: Date.now() // dynamic timestamp method, thank you stack overflow
     })
 })
