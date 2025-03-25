@@ -4,7 +4,7 @@ const app = express() // call the function, returns object of type: Express, sto
 //decided not to use app.use(express.json()) because i read in w3 documen its overkill for only GET op
 app.get("/api", (req,res) => { // defining the route
     res.json({
-        message: "My name is Anthony Dang",
+        message: "My name is Anthony Dang, here at Liatrio HQ",
         timestamp: Date.now() // dynamic timestamp method, thank you stack overflow
     })
 })
